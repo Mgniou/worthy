@@ -318,6 +318,124 @@
 	    top: 455px;
 	    left:25px;
 	}
+
+	.left_hair_one{
+    -webkit-animation: lefthair 2s ease-in-out infinite;
+}
+@-webkit-keyframes lefthair{
+    0%,25%,31%,100%{
+    }
+    30%{
+        -webkit-transform: rotate(31deg) translate3d(-3px,-1px,0);
+    }
+}
+.eyes .leftEye .left_blackEye,
+.eyes .rightEye .right_blackEye{
+    -webkit-animation: blackeye 5s ease-in infinite;
+}
+@-webkit-keyframes blackeye{
+    0%,20%,50%,70%,100%{
+        -webkit-transform: translateX(0px);
+    }
+    30%,40%{
+        -webkit-transform: translateX(15px);
+    }
+    80%,90%{
+        -webkit-transform: translateX(-15px);
+    }
+}
+.eyes .leftEye .left_blackEye .left_white,
+.eyes .rightEye .right_blackEye .right_white{
+    -webkit-animation: whiteeye 5s ease-in-out infinite;
+}
+@-webkit-keyframes whiteeye{
+    0%,20%,50%,70%,100%{
+        -webkit-transform: translateX(0px);
+    }
+    30%,40%{
+        -webkit-transform: translate3d(3px,4px,0);
+    }
+    80%,90%{
+        -webkit-transform: translate3d(-15px,4px,0);
+    }
+}
+.mouse .mouse_shape{
+    -webkit-animation: mouse 5s ease-in-out infinite;
+}
+@-webkit-keyframes mouse{
+    40%,43%{
+        width: 45px;
+        height: 25px;
+        top:180px;
+    }
+    0%,35%,48%,100%{
+        width: 55px;
+        height: 35px;
+        top:175px;
+        -webkit-transform:rotate(-35deg);
+    }
+}
+.mouse .mouse_shape:after{
+    -webkit-animation: mouse_mask 5s ease-in-out infinite;
+}
+@-webkit-keyframes mouse_mask{
+    40%,43%{
+        width: 60.5px;
+        top:-19.3px;
+        left:1.5px;
+    }
+    0%,35%,48%,100%{
+        width: 70px;
+        top:-16px;
+        left:3px;
+        -webkit-transform:rotate(33deg);
+    }
+}
+.hands .rightHand{
+    -webkit-animation:rightHand .8s ease-in-out infinite;
+}
+@-webkit-keyframes rightHand{
+    0%,50%,100%{
+        -webkit-transform: rotate(40deg);
+    }
+    30%{
+        -webkit-transform: rotate(37deg) translateX(1px);
+    }
+}
+.hands .leftHand{
+    -webkit-animation:leftHand .8s ease-in-out infinite;
+}
+@-webkit-keyframes leftHand{
+    0%,50%,100%{
+        -webkit-transform: rotate(-40deg);
+    }
+    80%{
+        -webkit-transform: rotate(-37deg) translateX(-1px);
+    }
+}
+.feet .right_foot{
+    -webkit-animation: rightfoot .8s ease-in-out infinite;
+}
+@-webkit-keyframes rightfoot{
+    0%,50%,100%{
+        -webkit-transform: rotate(0deg);
+    }
+    80%{
+        -webkit-transform: rotate(10deg);
+    }
+}
+.feet .left_foot{
+    -webkit-animation: leftfoot .8s ease-in-out infinite;
+}
+@-webkit-keyframes leftfoot{
+    0%,50%,100%{
+        -webkit-transform: rotate(0deg);
+    }
+
+    30%{
+        -webkit-transform: rotate(-10deg);
+    }
+}
 </style>
 <body>
 	<div class="wrapper">
